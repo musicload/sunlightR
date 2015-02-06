@@ -1,0 +1,37 @@
+---
+title: "swiss-stats"
+author: "serge"
+date: "6 Feb 2015"
+output: html_document
+---
+# Swiss Stats
+This is an overview document for the Swiss Stats project (in the context of Sunlight).
+The idea of this project is quite simple:
+
+* learn and practice the R basics
+    + Getting the data from Internet
+    + Data cleansing
+    + Reproducible research using Open Data sources
+    + Basic visualizations, plots and statistical calculations
+* write simple functions and collaborate with others
+    + push the contents to GitHub
+    + write the functions to calculate quantiles, join data, show correlations etc.
+    + collaborate with others with forks and pull requests (via GitHub)
+
+# Technical remains
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+library(ggplot2)
+qplot(speed, dist, data=cars) + geom_smooth()
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
